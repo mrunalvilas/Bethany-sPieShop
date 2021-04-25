@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+            margin: 20px;
+            padding: 20px;
+            align: center;
+            border-radius: 20px;
+            background-image: linear-gradient(pink, lightblue);
+
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 20px, 2px 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>{{title}}</h2>
+    {{#data}}
+    <div class="card">
+        <div class="container">
+            <img src={{imageUrl}} alt="Avatar" style="width:20%">
+            <h3><b>{{name}}</b></h3>
+            <p>
+                <b>Price:</b>{{wholePrice}}
+                <br />
+                <b>Calories:</b> {{sliceCalories}}
+            </p>
+        </div>
+    </div>
+    </div>
+    {{/data}}
+
+</body>
+
+</html>
